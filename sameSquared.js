@@ -22,7 +22,7 @@ function same(arr1, arr2) {
   if(arr1.length !== arr2.length) {
     return false
   }
-  squaresFreq = {};
+  const squaresFreq = {};
   for(let num1 of arr1) {
      squaresFreq[num1 ** 2] = squaresFreq[num1 ** 2] + 1 || 1;
   }
@@ -41,10 +41,10 @@ function same(arr1, arr2) {
 
 //Tests
 
-console.log(same([1,2,3],[1,4,9]))
-console.log(same([1,2,3],[1,9]))
-console.log(same([1,2,1],[4,4,1]))
-console.log(same([1,2,3,2,5],[9,4,4,1,25]))
+// console.log(same([1,2,3],[1,4,9]))
+// console.log(same([1,2,3],[1,9]))
+// console.log(same([1,2,1],[4,4,1]))
+// console.log(same([1,2,3,2,5],[9,4,4,1,25]))
 
 
 
