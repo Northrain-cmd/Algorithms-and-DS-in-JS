@@ -1,0 +1,23 @@
+{
+  "name": "Algorithms-and-DS-in-JS",
+  "version": "1.0.0",
+  "description": "",
+  "main": "binarySearch.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Northrain-cmd/Algorithms-and-DS-in-JS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Northrain-cmd/Algorithms-and-DS-in-JS/issues"
+  },
+  "homepage": "https://github.com/Northrain-cmd/Algorithms-and-DS-in-JS#readme",
+  "dependencies": {
+    "jest": "^27.0.6"
+  }
+}
