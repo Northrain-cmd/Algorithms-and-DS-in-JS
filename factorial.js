@@ -1,5 +1,5 @@
 // Write a function that calculates the factorial
-// of a number n recursicvely
+// of a number n recursively
 
 function factorial(n) {
   if(n === 1) return 1
