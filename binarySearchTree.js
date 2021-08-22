@@ -64,6 +64,55 @@ class binarySearchTree {
    }
     return false
   }
+
+  breadthFirstTraversal() {
+    if(!this.root) return undefined
+    let result = [];
+    let queue = [this.root];
+    while(queue[0]) {
+      let cur = queue.shift();
+      if(cur.left) queue.push(cur.left);
+      if(cur.right) queue.push(cur.right);
+      result.push(cur.value);
+    }
+    return result
+  }
+
+  preorderDFS() {
+    if(!this.root) return undefined;
+    let result = [];
+    function traverse(node) {
+      result.push(node.value);
+      if(node.left) traverse(node.left);
+      if(node.right) traverse(node.right);
+    }
+    traverse(this.root);
+    return result;
+  }
+
+  postorderDFS() {
+    if(!this.root) return undefined;
+    let result = [];
+    function traverse(node) {
+      if(node.left) traverse(node.left);
+      if(node.right) traverse(node.right);
+      result.push(node.value);
+    }
+    traverse(this.root);
+    return result;
+  }
+
+  inorderDFS () {
+     if(!this.root) return undefined;
+    let result = [];
+    function traverse(node) {
+      if(node.left) traverse(node.left);
+      result.push(node.value);
+      if(node.right) traverse(node.right);
+    }
+    traverse(this.root);
+    return result;
+  }
 }
 
 // Tests
@@ -74,5 +123,7 @@ class binarySearchTree {
 // tree.insert(11);
 // tree.insert(9);
 // tree.insert(5);
+// tree.insert(15);
+// console.log(tree.inorderDFS())
 // console.log(tree.insert(14));
 // console.log(tree.contains(5));
