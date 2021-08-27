@@ -103,7 +103,7 @@ class binarySearchTree {
   }
 
   inorderDFS () {
-     if(!this.root) return undefined;
+    if(!this.root) return undefined;
     let result = [];
     function traverse(node) {
       if(node.left) traverse(node.left);
