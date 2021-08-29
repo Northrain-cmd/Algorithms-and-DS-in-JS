@@ -51,6 +51,8 @@ class PriorityQueue {
   }
 }
 
+module.exports = PriorityQueue;
+
 // Tests
 // let ER = new PriorityQueue();
 // ER.enq("Flew",3);
