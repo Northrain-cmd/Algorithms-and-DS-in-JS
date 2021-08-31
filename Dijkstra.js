@@ -58,5 +58,5 @@ function shortestPath(graph, start, end) {
 }
 
 // Test
-console.log(shortestPath(graph,"A", "E"));
+// console.log(shortestPath(graph,"A", "E"));
 
